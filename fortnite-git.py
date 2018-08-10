@@ -25,8 +25,8 @@ drop = ['Anarchy Acres', 'Dusty Divot', 'Fatal Fields', 'Flush Factory', 'Greasy
 week1 = 'https://i.redd.it/7nauejtfui911.jpg'
 week2 = 'https://i.redd.it/f3wocu0tpwa11.jpg'
 week3 = 'https://i.redd.it/xihzmw4brac11.jpg'
-week4 = 'Not available yet'
-week5 = 'Not available yet'
+week4 = 'https://i.redd.it/h6oj6uuaood11.jpg'
+week5 = 'https://i.redd.it/uzoqem8om2f11.jpg'
 week6 = 'Not available yet'
 week7 = 'Not available yet'
 week8 = 'Not available yet'
@@ -286,6 +286,6 @@ async def on_ready():
     print('Status: Active')
     print('Use !fortnite in Discord to view commands')
     print('------')
-    await client.change_presence(game=discord.Game(name='!fortnite | S5:3'))
+    await client.change_presence(game=discord.Game(name='!fortnite | S5:5'))
 
 client.run(TOKEN)
