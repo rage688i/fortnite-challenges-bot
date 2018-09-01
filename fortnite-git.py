@@ -28,8 +28,8 @@ week3 = 'https://i.redd.it/xihzmw4brac11.jpg'
 week4 = 'https://i.redd.it/h6oj6uuaood11.jpg'
 week5 = 'https://i.redd.it/uzoqem8om2f11.jpg'
 week6 = 'https://i.redd.it/fahipbn3zgg11.jpg'
-week7 = 'Not available yet'
-week8 = 'Not available yet'
+week7 = 'https://i.redd.it/73w8ni2rl1i11.jpg'
+week8 = 'https://i.redd.it/yhbim1z3d8j11.jpg'
 week9 = 'Not available yet'
 weekX = 'Not available yet'
 
@@ -286,6 +286,6 @@ async def on_ready():
     print('Status: Active')
     print('Use !fortnite in Discord to view commands')
     print('------')
-    await client.change_presence(game=discord.Game(name='!fortnite | S5:6'))
+    await client.change_presence(game=discord.Game(name='!fortnite | S5:8'))
 
 client.run(TOKEN)
