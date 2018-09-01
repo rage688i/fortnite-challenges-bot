@@ -1,6 +1,6 @@
 # fortnite-challenges-bot
 
-Python 3.6 required!
+Python 3.6+ required! https://www.python.org/downloads/
 
 Install dependencies first:
 pip install discord
@@ -12,7 +12,7 @@ Get token and input into yourTokenHere
 
 To run, type python fortnite-git.py
 
-To use in discord: Instructions: !drop for random drop location. !week1-X to get weekly challenge. !roadtrip1-7 to get the hidden challenge for each week. !location (!hauntedhills, !greasygrove, !wailingwoods, etc) to get chest locations for each area
+To use in discord: Instructions: !drop for random drop location. !week1-X to get weekly challenge. !location (!hauntedhills, !greasygrove, !wailingwoods, etc) to get chest locations for each area
 
 DM the bot to ensure everything is working.
 
