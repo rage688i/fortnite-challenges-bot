@@ -46,18 +46,6 @@ weekX = 'Not available yet'
 #blockbusterX = 'has no battle pass star'
 #blockbusterall = 'https://i.redd.it/5x8udejll0611.jpg'
 
-# road trip challenges (secret battle pass star) season 5
-roadtrip1 = 'Not available yet'
-roadtrip2 = 'Not available yet'
-roadtrip3 = 'Not available yet'
-roadtrip4 = 'Not available yet'
-roadtrip5 = 'Not available yet'
-roadtrip6 = 'Not available yet'
-roadtrip7 = 'Not available yet'
-roadtrip8 = 'Not available yet'
-roadtrip9 = 'Not available yet'
-roadtripX = 'Not available yet'
-
 # chest locations
 lonelylodge = 'https://i.redd.it/fyqxh1ihyzx01.jpg'
 greasygrove = 'https://i.redd.it/02dd95qklnw01.jpg'
@@ -210,46 +198,6 @@ async def on_message(message):
         msg = 'All Blockbuster Star Locations' + ' ' + blockbusterall.format(message)
         await client.send_message(message.channel, msg)
 
-    #set keyword for roadtrip week 1
-    if message.content.startswith('!roadtrip1'):
-        msg = 'Roadtrip 1 Star Location' + ' ' + roadtrip1.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 2
-    if message.content.startswith('!roadtrip2'):
-        msg = 'Roadtrip 2 Star Location' + ' ' + roadtrip2.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 3
-    if message.content.startswith('!roadtrip3'):
-        msg = 'Roadtrip 3 Star Location' + ' ' + roadtrip3.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 4
-    if message.content.startswith('!roadtrip4'):
-        msg = 'Roadtrip 4 Star Location' + ' ' + roadtrip4.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 5
-    if message.content.startswith('!roadtrip5'):
-        msg = 'Roadtrip 5 Star Location' + ' ' + roadtrip5.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 6
-    if message.content.startswith('!roadtrip6'):
-        msg = 'Roadtrip 6 Star Location' + ' ' + roadtrip6.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 7
-    if message.content.startswith('!roadtrip7'):
-        msg = 'Roadtrip 7 Star Location' + ' ' + roadtrip7.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 8
-    if message.content.startswith('!roadtrip8'):
-        msg = 'Roadtrip 8 Star Location' + ' ' + roadtrip8.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 9
-    if message.content.startswith('!roadtrip9'):
-        msg = 'Roadtrip 9 Star Location' + ' ' + roadtrip9.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for roadtrip week 10
-    if message.content.startswith('!roadtripX'):
-        msg = 'Roadtrip 10 Star Location' + ' ' + roadtripX.format(message)
-        await client.send_message(message.channel, msg)
         
     # set keyword for drop locations
     if message.content.startswith('!drop'):
