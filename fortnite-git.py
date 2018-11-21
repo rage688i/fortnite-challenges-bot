@@ -3,13 +3,14 @@ import discord
 import asyncio
 import random
 
-TOKEN = 'yourTokenHere'
+TOKEN = 'YOURTOKENHERE'
 
 client = discord.Client()
 
-drop = ['Anarchy Acres', 'Dusty Divot', 'Fatal Fields', 'Flush Factory', 'Greasy Grove', 'Haunted Hills', 'Junk Junction', 'Lazy Links', 'Lonely Lodge', 'Loot Lake', 'Lucky Landing', 'Paradise Palms', 'Pleasant Park', 'Retail Row', 'Risky Reels', 'Salty Springs', 'Shifty Shafts', 'Snobby Shores', 'Tilted Towers', 'Tomato Town', 'Wailing Woods']
+# map locations
+drop = ['Anarchy Acres', 'Dusty Divot', 'Fatal Fields', 'Flush Factory', 'Greasy Grove', 'Haunted Hills', 'Junk Junction', 'Lazy Links', 'Lonely Lodge', 'Leaky Lake', 'Lucky Landing', 'Paradise Palms', 'Pleasant Park', 'Retail Row', 'Risky Reels', 'Salty Springs', 'Shifty Shafts', 'Snobby Shores', 'Tilted Towers', 'Tomato Temple', 'Wailing Woods']
 
-#weekly challenges season 4
+# weekly challenges season 4 (depreciated)
 #week1 = 'https://i.redd.it/o56opse8v8v01.jpg'
 #week2 = 'https://i.redd.it/m3huulqtlnw01.jpg'
 #week3 = 'https://i.redd.it/az5bi82hzzx01.jpg'
@@ -21,30 +22,29 @@ drop = ['Anarchy Acres', 'Dusty Divot', 'Fatal Fields', 'Flush Factory', 'Greasy
 #week9 = 'https://i.imgur.com/B06mKzG.jpg'
 #weekX = 'https://i.imgur.com/3iR0bGF.jpg'
 
-# weekly challenges season 5
-week1 = 'https://i.redd.it/7nauejtfui911.jpg'
-week2 = 'https://i.redd.it/f3wocu0tpwa11.jpg'
-week3 = 'https://i.redd.it/xihzmw4brac11.jpg'
-week4 = 'https://i.redd.it/h6oj6uuaood11.jpg'
-week5 = 'https://i.redd.it/uzoqem8om2f11.jpg'
-week6 = 'https://i.redd.it/fahipbn3zgg11.jpg'
-week7 = 'https://i.redd.it/73w8ni2rl1i11.jpg'
-week8 = 'https://i.redd.it/yhbim1z3d8j11.jpg'
-week9 = 'Not available yet'
-weekX = 'Not available yet'
+# weekly challenges season 5 (depreciated)
+#week1 = 'https://i.redd.it/7nauejtfui911.jpg'
+#week2 = 'https://i.redd.it/f3wocu0tpwa11.jpg'
+#week3 = 'https://i.redd.it/xihzmw4brac11.jpg'
+#week4 = 'https://i.redd.it/h6oj6uuaood11.jpg'
+#week5 = 'https://i.redd.it/uzoqem8om2f11.jpg'
+#week6 = 'https://i.redd.it/fahipbn3zgg11.jpg'
+#week7 = 'https://i.redd.it/73w8ni2rl1i11.jpg'
+#week8 = 'https://i.redd.it/yhbim1z3d8j11.jpg'
+#week9 = 'https://i.redd.it/bh9jeh74ltk11.jpg'
+#weekX = 'https://i.redd.it/8kru4hjud0m11.jpg'
 
-# blockbuster challenges (secret battle pass star) season 4
-#blockbuster1 = 'https://i.redd.it/vnqpm5ii6iv01.jpg'
-#blockbuster2 = 'https://i.redd.it/oz1anpa7nnw01.jpg'
-#blockbuster3 = 'https://i.redd.it/ju4ixjcy79y01.jpg'
-#blockbuster4 = 'https://i.redd.it/papf24v0wdz01.jpg'
-#blockbuster5 = 'https://i.redd.it/w8ec66o4h6111.jpg'
-#blockbuster6 = 'https://i.redd.it/07h10o1itj211.jpg'
-#blockbuster7 = 'https://i.redd.it/upa3fp5ijx311.jpg'
-#blockbuster8 = 'has no battle pass star'
-#blockbuster9 = 'has no battle pass star'
-#blockbusterX = 'has no battle pass star'
-#blockbusterall = 'https://i.redd.it/5x8udejll0611.jpg'
+# weekly challenges season 6
+week1 = 'https://i.redd.it/ocqvrzkraso11.jpg'
+week2 = 'https://i.redd.it/nhquyo2aa6q11.jpg'
+week3 = 'https://i.redd.it/23lj1ypejkr11.jpg'
+week4 = 'https://i.redd.it/a5utgt5h7ys11.jpg'
+week5 = 'https://i.redd.it/44rm8cgyhcu11.jpg'
+week6 = 'https://i.redd.it/8n8z4e7mw5u11.jpg' #haloween event (Fortnitemares)
+week7 = 'https://i.redd.it/vr11ih7ne4x11.jpg'
+week8 = 'https://i.redd.it/o1t7tr619iy11.jpg'
+week9 = ''
+weekX = ''
 
 # chest locations
 lonelylodge = 'https://i.redd.it/fyqxh1ihyzx01.jpg'
@@ -52,7 +52,6 @@ greasygrove = 'https://i.redd.it/02dd95qklnw01.jpg'
 hauntedhills = 'https://i.redd.it/al5x9f1ht8v01.jpg'
 wailingwoods = 'https://i.redd.it/f83lco3lcdz01.jpg'
 dustydivot = 'https://i.redd.it/h5bwrvx9e6111.jpg'
-lootlake = 'https://i.redd.it/5i61xfzxvj211.jpg'
 riskyreels = 'https://i.redd.it/jy4s3b9cax311.jpg'
 saltysprings = 'https://i.redd.it/q8nspjdh0c511.jpg'
 #moistymire = 'https://i.redd.it/rg26c3isgp611.jpg'
@@ -74,131 +73,81 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    #chest locations by area
-    #set keyword for lonely lodge chests
+    # chest locations by area
+    # set keyword for lonely lodge chests
     if message.content.startswith('!lonelylodge'):
         msg = 'Lonely Lodge Chests' + ' ' +  lonelylodge.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for greasy grove chests
+    # set keyword for greasy grove chests
     if message.content.startswith('!greasygrove'):
         msg = 'Greasy Grove Chests' + ' ' + greasygrove.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for haunted hills chests
+    # set keyword for haunted hills chests
     if message.content.startswith('!hauntedhills'):
         msg = 'Haunted Hills Chests' + ' ' + hauntedhills.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for wailing woods chests
+    # set keyword for wailing woods chests
     if message.content.startswith('!wailingwoods'):
         msg = 'Wailing Woods Chests' + ' ' + wailingwoods.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for dusty divot chests
+    # set keyword for dusty divot chests
     if message.content.startswith('!dustydivot'):
         msg = 'Dusty Divot Chests' + ' ' + dustydivot.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for loot lake chests
-    if message.content.startswith('!lootlake'):
-        msg = 'Loot Lake Chests' + ' ' + lootlake.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for risky reels chests
+    # set keyword for risky reels chests
     if message.content.startswith('!riskyreels'):
         msg = 'Risky Reels Chests' + ' ' + riskyreels.format(message)
         await client.send_message(message.channel, msg)
-     #set keyword for salty springs chests
+     # set keyword for salty springs chests
     if message.content.startswith('!saltysprings'):
         msg = 'Salty Springs Chests' + ' ' + saltysprings.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for junk junction chests
+    # set keyword for junk junction chests
     if message.content.startswith('!junkjunction'):
         msg = 'Junk Junction Chests' + ' ' + junkjunction.format(message)
         await client.send_message(message.channel, msg)
 
-    #set keyword for week 1
+    # set keyword for week 1
     if message.content.startswith('!week1'):
         msg = 'Week 1 Challenges' + ' ' + week1.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 2
+    # set keyword for week 2
     if message.content.startswith('!week2'):
         msg = 'Week 2 Challenges' + ' ' + week2.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 3
+    # set keyword for week 3
     if message.content.startswith('!week3'):
         msg = 'Week 3 Challenges' + ' ' + week3.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 4
+    # set keyword for week 4
     if message.content.startswith('!week4'):
         msg = 'Week 4 Challenges' + ' ' + week4.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 5
+    # set keyword for week 5
     if message.content.startswith('!week5'):
         msg = 'Week 5 Challenges' + ' ' + week5.format(message)
         await client.send_message(message.channel, msg)
-     #set keyword for week 6
+    # set keyword for week 6
     if message.content.startswith('!week6'):
         msg = 'Week 6 Challenges' + ' ' + week6.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 7
+    # set keyword for week 7
     if message.content.startswith('!week7'):
         msg = 'Week 7 Challenges' + ' ' + week7.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 8
+    # set keyword for week 8
     if message.content.startswith('!week8'):
         msg = 'Week 8 Challenges' + ' ' + week8.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 9
+    # set keyword for week 9
     if message.content.startswith('!week9'):
         msg = 'Week 9 Challenges' + ' ' + week9.format(message)
         await client.send_message(message.channel, msg)
-    #set keyword for week 10
+    # set keyword for week 10
     if message.content.startswith('!weekX'):
         msg = 'Week 10 Challenges' + ' ' + weekX.format(message)
         await client.send_message(message.channel, msg)
 
-    #set keyword for blockbuster 1
-    if message.content.startswith('!blockbuster1'):
-        msg = 'Blockbuster Week 1 Challenge' + ' ' + blockbuster1.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for blockbuster 2
-    if message.content.startswith('!blockbuster2'):
-        msg = 'Blockbuster Week 2 Challenge' + ' ' + blockbuster2.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for blockbuster 3
-    if message.content.startswith('!blockbuster3'):
-        msg = 'Blockbuster Week 3 Challenge' + ' ' + blockbuster3.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for blockbuster 4
-    if message.content.startswith('!blockbuster4'):
-        msg = 'Blockbuster Week 4 Challenge' + ' ' + blockbuster4.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for blockbuster 5
-    if message.content.startswith('!blockbuster5'):
-        msg = 'Blockbuster Week 5 Challenge' + ' ' + blockbuster5.format(message)
-        await client.send_message(message.channel, msg)
-     #set keyword for blockbuster 6
-    if message.content.startswith('!blockbuster6'):
-        msg = 'Blockbuster Week 6 Challenge' + ' ' + blockbuster6.format(message)
-        await client.send_message(message.channel, msg)
-     #set keyword for blockbuster 7
-    if message.content.startswith('!blockbuster7'):
-        msg = 'Blockbuster Week 7 Challenge' + ' ' + blockbuster7.format(message)
-        await client.send_message(message.channel, msg)
-     #set keyword for blockbuster 8
-    if message.content.startswith('!blockbuster8'):
-        msg = 'Blockbuster Week 8 Challenge' + ' ' + blockbuster8.format(message)
-        await client.send_message(message.channel, msg)
-     #set keyword for blockbuster 9
-    if message.content.startswith('!blockbuster9'):
-        msg = 'Blockbuster Week 9 Challenge' + ' ' + blockbuster9.format(message)
-        await client.send_message(message.channel, msg)
-     #set keyword for blockbuster 10
-    if message.content.startswith('!blockbusterX'):
-        msg = 'Blockbuster Week 10 Challenge' + ' ' + blockbusterX.format(message)
-        await client.send_message(message.channel, msg)
-    #set keyword for blockbuster all
-    if message.content.startswith('!blockbusterall'):
-        msg = 'All Blockbuster Star Locations' + ' ' + blockbusterall.format(message)
-        await client.send_message(message.channel, msg)
-
-        
     # set keyword for drop locations
     if message.content.startswith('!drop'):
         location = random.choice(drop)
@@ -207,7 +156,7 @@ async def on_message(message):
 
     # set keyword for help
     if message.content.startswith('!fortnite'):
-        msg = 'Instructions: !drop for random drop location. !week1-X to get weekly challenge. !roadtrip1-7 to get the hidden challenge for each week. !location (!hauntedhills, !greasygrove, !wailingwoods, etc) to get chest locations for each area'.format(message)
+        msg = 'How to use: !drop for random drop location. !week1-X to get weekly challenge. !location (!hauntedhills, !greasygrove, etc) to get chest locations for each area'.format(message)
         await client.send_message(message.channel, msg)
 
     # set keyword for all shopping cart locations
@@ -224,7 +173,7 @@ async def on_message(message):
     if message.content.startswith('!bday'):
         msg = 'Fortnite Year 1 Celebration Challenges' + ' ' + bday.format(message)
         await client.send_message(message.channel, msg)
-        
+
 @client.event
 @asyncio.coroutine
 async def on_ready():
@@ -232,8 +181,9 @@ async def on_ready():
     print('Username: ' + client.user.name)
     print('User ID: ' + client.user.id)
     print('Status: Active')
+    print('Fortnite Season 6 Week 8')
     print('Use !fortnite in Discord to view commands')
     print('------')
-    await client.change_presence(game=discord.Game(name='!fortnite | S5:8'))
+    await client.change_presence(game=discord.Game(name='!fortnite | S6:8'))
 
 client.run(TOKEN)
