@@ -43,8 +43,8 @@ week5 = 'https://i.redd.it/44rm8cgyhcu11.jpg'
 week6 = 'https://i.redd.it/8n8z4e7mw5u11.jpg' #haloween event (Fortnitemares)
 week7 = 'https://i.redd.it/vr11ih7ne4x11.jpg'
 week8 = 'https://i.redd.it/o1t7tr619iy11.jpg'
-week9 = ''
-weekX = ''
+week9 = 'https://i.redd.it/pod3k4i6dwz11.jpg'
+weekX = 'https://i.redd.it/nsdgn5lyda121.jpg'
 
 # chest locations
 lonelylodge = 'https://i.redd.it/fyqxh1ihyzx01.jpg'
@@ -181,9 +181,9 @@ async def on_ready():
     print('Username: ' + client.user.name)
     print('User ID: ' + client.user.id)
     print('Status: Active')
-    print('Fortnite Season 6 Week 8')
+    print('Fortnite Season 6 Week 10')
     print('Use !fortnite in Discord to view commands')
     print('------')
-    await client.change_presence(game=discord.Game(name='!fortnite | S6:8'))
+    await client.change_presence(game=discord.Game(name='!fortnite | S6:10'))
 
 client.run(TOKEN)
